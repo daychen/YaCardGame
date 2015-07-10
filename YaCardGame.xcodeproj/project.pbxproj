@@ -81,8 +81,6 @@
 		63D31D701B4FC3D300F5E4C5 /* YaCardGame */ = {
 			isa = PBXGroup;
 			children = (
-				63D31D751B4FC3D300F5E4C5 /* AppDelegate.h */,
-				63D31D761B4FC3D300F5E4C5 /* AppDelegate.m */,
 				63D31D781B4FC3D300F5E4C5 /* ViewController.h */,
 				63D31D791B4FC3D300F5E4C5 /* ViewController.m */,
 				63D31D7B1B4FC3D300F5E4C5 /* Main.storyboard */,
@@ -96,6 +94,8 @@
 		63D31D711B4FC3D300F5E4C5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				63D31D751B4FC3D300F5E4C5 /* AppDelegate.h */,
+				63D31D761B4FC3D300F5E4C5 /* AppDelegate.m */,
 				63D31D721B4FC3D300F5E4C5 /* Info.plist */,
 				63D31D731B4FC3D300F5E4C5 /* main.m */,
 			);
@@ -412,6 +412,7 @@
 				63D31D931B4FC3D300F5E4C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63D31D941B4FC3D300F5E4C5 /* Build configuration list for PBXNativeTarget "YaCardGameTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +421,7 @@
 				63D31D961B4FC3D300F5E4C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
