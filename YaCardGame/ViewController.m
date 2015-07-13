@@ -26,14 +26,18 @@
 - (IBAction)touchCardButton:(UIButton *)sender {
 
     if ([sender.currentTitle length]) {
+        
+        [sender setBackgroundImage:[UIImage imageNamed:@"cardback"] forState:UIControlStateNormal];
         [sender setTitle:@"" forState:UIControlStateNormal];
-        [sender setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
     
     }else{
-        [sender setTitle:@"A" forState:UIControlStateNormal];
+        [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"] forState:UIControlStateNormal];
+        [sender setTitle:@"A♠︎" forState:UIControlStateNormal];
         
-        [sender setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+      
     }
+    
+    self.flipcount++;
     
 }
 
