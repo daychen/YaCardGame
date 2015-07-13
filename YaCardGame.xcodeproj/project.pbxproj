@@ -18,6 +18,7 @@
 		63D964B91B53B57100CA7413 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D964B81B53B57100CA7413 /* Deck.m */; };
 		63D964BC1B53BBB200CA7413 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D964BB1B53BBB200CA7413 /* PlayingCard.m */; };
 		63D964BF1B53C4B700CA7413 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D964BE1B53C4B700CA7413 /* PlayingCardDeck.m */; };
+		8D0D95C21B53F03A005FBDC8 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D95C11B53F03A005FBDC8 /* CardMatchingGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		63D964BB1B53BBB200CA7413 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = Model/PlayingCard.m; sourceTree = "<group>"; };
 		63D964BD1B53C4B700CA7413 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCardDeck.h; path = Model/PlayingCardDeck.h; sourceTree = "<group>"; };
 		63D964BE1B53C4B700CA7413 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Model/PlayingCardDeck.m; sourceTree = "<group>"; };
+		8D0D95C01B53F03A005FBDC8 /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardMatchingGame.h; sourceTree = "<group>"; };
+		8D0D95C11B53F03A005FBDC8 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 				63D31D781B4FC3D300F5E4C5 /* ViewController.h */,
 				63D31D791B4FC3D300F5E4C5 /* ViewController.m */,
 				63D31D7B1B4FC3D300F5E4C5 /* Main.storyboard */,
+				8D0D95C01B53F03A005FBDC8 /* CardMatchingGame.h */,
+				8D0D95C11B53F03A005FBDC8 /* CardMatchingGame.m */,
 				63D31D7E1B4FC3D300F5E4C5 /* Images.xcassets */,
 				63D31D801B4FC3D300F5E4C5 /* LaunchScreen.xib */,
 				63D31D711B4FC3D300F5E4C5 /* Supporting Files */,
@@ -243,6 +248,7 @@
 				63D964B91B53B57100CA7413 /* Deck.m in Sources */,
 				63D31D7A1B4FC3D300F5E4C5 /* ViewController.m in Sources */,
 				63D31D771B4FC3D300F5E4C5 /* AppDelegate.m in Sources */,
+				8D0D95C21B53F03A005FBDC8 /* CardMatchingGame.m in Sources */,
 				63D964BF1B53C4B700CA7413 /* PlayingCardDeck.m in Sources */,
 				63D31D741B4FC3D300F5E4C5 /* main.m in Sources */,
 				63D964B61B53ADC500CA7413 /* Card.m in Sources */,
