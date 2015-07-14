@@ -20,6 +20,6 @@
 
 
 @property(nonatomic,readonly) NSUInteger score;
-
+@property(nonatomic)NSUInteger maxMatchingCard;
 
 @end

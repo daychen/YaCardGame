@@ -178,9 +178,35 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="117" y="528" width="133" height="43"/>
+                                    <rect key="frame" x="54" y="460" width="133" height="43"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAC-pd-cIe">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="restart">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="228" y="465" width="118" height="34"/>
+                                </variation>
+                                <connections>
+                                    <action selector="resetButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BNa-Oq-bIw"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jCq-aY-Ala">
+                                <rect key="frame" x="-61" y="-14" width="123" height="29"/>
+                                <segments>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                </segments>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="54" y="534" width="45" height="29"/>
+                                </variation>
+                                <connections>
+                                    <action selector="chooseModeSegment:" destination="vXZ-lx-hvc" eventType="valueChanged" id="PHp-GF-Eug"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
@@ -198,6 +224,8 @@
                                 <exclude reference="ewz-Gs-p5K"/>
                                 <exclude reference="h2S-bq-dkQ"/>
                                 <exclude reference="JHN-SZ-a6d"/>
+                                <exclude reference="qAC-pd-cIe"/>
+                                <exclude reference="jCq-aY-Ala"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -215,11 +243,14 @@
                                 <include reference="ewz-Gs-p5K"/>
                                 <include reference="h2S-bq-dkQ"/>
                                 <include reference="JHN-SZ-a6d"/>
+                                <include reference="qAC-pd-cIe"/>
+                                <include reference="jCq-aY-Ala"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="modeSelector" destination="jCq-aY-Ala" id="sdP-o1-ktK"/>
                         <outlet property="scoreLabel" destination="JHN-SZ-a6d" id="2Qd-OG-gVT"/>
                         <outletCollection property="CardButtons" destination="hbM-RK-LMu" id="CvV-sv-5XU"/>
                         <outletCollection property="CardButtons" destination="c67-xr-fKX" id="bAg-se-L2S"/>

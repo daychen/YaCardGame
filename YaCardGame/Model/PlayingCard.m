@@ -16,14 +16,23 @@
     
     if ([otherCards count]==1) {
         
-        PlayingCard *card=[otherCards firstObject];
+        id card=[otherCards firstObject];
+        if ([card isKindOfClass:[PlayingCard class]]) {
+           
+            PlayingCard *otherCard=(PlayingCard*)card;
+            if ([self.suit isEqualToString:otherCard.suit]) {
+                score=1;
+            }
+            if (self.rank == otherCard.rank) {
+                score=4;
+            }
+        }
         
-        if ([self.suit isEqualToString:card.suit]) {
-            score=1;
-        }
-        if (self.rank == card.rank) {
-            score=4;
-        }
+       
+    }
+    
+    if ([otherCards count]>1) {
+        score+=[[otherCards firstObject] match:[otherCards subarrayWithRange:NSMakeRange(1, [otherCards count]-1)]];
     }
     
     return  score;

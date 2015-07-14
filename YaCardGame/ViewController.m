@@ -20,10 +20,19 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
+@property (weak, nonatomic) IBOutlet UISegmentedControl *modeSelector;
+
 @end
 
 
 @implementation ViewController
+
+
+- (IBAction)chooseModeSegment:(UISegmentedControl *)sender {
+    
+    self.cardGame.maxMatchingCard=[[sender titleForSegmentAtIndex:[sender selectedSegmentIndex]] integerValue];
+    
+}
 
 -(Deck *)deck{
     if (!_deck) {
@@ -37,15 +46,26 @@
     return [[PlayingCardDeck alloc]init];
 }
 
+
 -(CardMatchingGame *)cardGame{
     if (!_cardGame) {
         _cardGame=[[CardMatchingGame alloc]initWithCardCount:[self.CardButtons count] usingDeck:[self createDeck]];
+      
+        [self chooseModeSegment:self.modeSelector];
     }
     
     return _cardGame;
 }
 
 
+- (IBAction)resetButton:(UIButton *)sender {
+    
+    self.cardGame=nil;
+    [self updateUI];
+    
+    self.modeSelector.enabled=YES;
+    
+}
 
 
 - (IBAction)touchCardButton:(UIButton *)sender {
@@ -55,8 +75,11 @@
     [self.cardGame chooseCardAtIndex:cardIndex];
     
     [self updateUI];
+    self.modeSelector.enabled=NO;
     
 }
+
+
 
 -(void)updateUI{
 

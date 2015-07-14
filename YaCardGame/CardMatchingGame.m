@@ -25,6 +25,14 @@
     return  _cards;
 }
 
+
+-(NSUInteger)maxMatchingCard{
+    if (_maxMatchingCard <=2) {
+        _maxMatchingCard=2;
+    }
+    return _maxMatchingCard;
+}
+
 -(instancetype)initWithCardCount:(NSUInteger)count usingDeck:(Deck*) deck
 {
     self=[super init];
@@ -66,28 +74,45 @@ static const int COST_TO_CHOOSE= 1;
             card.chosen=NO;
         }else{
             
+            NSMutableArray *otherCards=[[NSMutableArray alloc]init];
             for (Card *otherCard in self.cards) {
                 if ((otherCard.isChosen) && (!otherCard.isMatched) ){
                     
-                    
-                    int matchScore=[card match:@[otherCard]];
-                    
-                    if (matchScore) {
-                        self.score+=matchScore*MATCH_BONUS;
-                        card.matched=YES;
-                        otherCard.matched=YES;
-                        
-                    }
-                    else{
-                        self.score-=MISMATCH_PERNATY;
-                        otherCard.chosen=NO;
-                    }
-                    
-                    break;
+                    [otherCards addObject:otherCard];
                 }
-                
-                
             }
+            
+                    if ([otherCards count]+1==self.maxMatchingCard) {
+                        
+                    
+                        int matchScore=[card match:otherCards];
+                        
+                        if (matchScore) {
+                            self.score+=matchScore*MATCH_BONUS;
+                            card.matched=YES;
+                            for (Card *newCard in otherCards ) {
+                                  newCard.matched=YES;
+                            }
+                          
+                            
+                        }else{
+                            self.score-=MISMATCH_PERNATY;
+                           
+                            for (Card *newCard in otherCards) {
+                                newCard.chosen=NO;
+                            }
+                            
+                        }
+                        
+                
+                        
+                    
+                    }
+                    
+            
+                
+                
+            
             
             
             self.score-=COST_TO_CHOOSE;
