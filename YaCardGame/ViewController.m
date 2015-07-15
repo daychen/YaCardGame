@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *modeSelector;
+@property (weak, nonatomic) IBOutlet UILabel *chooseResultLabel;
 
 @end
 
@@ -70,7 +71,7 @@
 
 - (IBAction)touchCardButton:(UIButton *)sender {
 
-    int cardIndex=[self.CardButtons indexOfObject:sender];
+    NSInteger cardIndex=[self.CardButtons indexOfObject:sender];
     
     [self.cardGame chooseCardAtIndex:cardIndex];
     
@@ -95,7 +96,9 @@
         
     }
     
-    self.scoreLabel.text=[NSString stringWithFormat:@"Score: %d",self.cardGame.score];
+    self.scoreLabel.text=[NSString stringWithFormat:@"Score: %ld",self.cardGame.score];
+    self.chooseResultLabel.text=self.cardGame.lastChooseResult;
+    
 }
 
 

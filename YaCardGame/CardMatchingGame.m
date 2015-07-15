@@ -9,7 +9,7 @@
 #import "CardMatchingGame.h"
 
 @interface CardMatchingGame()
-@property (nonatomic,readwrite)NSUInteger score;
+@property (nonatomic,readwrite)NSInteger score;
 
 @property(nonatomic, strong)NSMutableArray *cards;
 @end
@@ -85,28 +85,45 @@ static const int COST_TO_CHOOSE= 1;
                     if ([otherCards count]+1==self.maxMatchingCard) {
                         
                     
+                        
                         int matchScore=[card match:otherCards];
+                          NSString *otherCardsContents=@"";
+                        
+                        for (Card *anoCard in otherCards) {
+                            otherCardsContents=[otherCardsContents stringByAppendingString:anoCard.contents];
+
+                        }
+                        
                         
                         if (matchScore) {
                             self.score+=matchScore*MATCH_BONUS;
                             card.matched=YES;
-                            for (Card *newCard in otherCards ) {
+                            
+                          
+                            for (Card *newCard in otherCards )
                                   newCard.matched=YES;
-                            }
+                                
+                            
+                            self.lastChooseResult=[NSString stringWithFormat:@"Matched %@ and %@ for %d point",card.contents,otherCardsContents,matchScore];
                           
                             
                         }else{
                             self.score-=MISMATCH_PERNATY;
                            
-                            for (Card *newCard in otherCards) {
+                            for (Card *newCard in otherCards)
                                 newCard.chosen=NO;
-                            }
+                            
+                            self.lastChooseResult=[NSString stringWithFormat:@"%@ and %@ don't match! %d point penalty", card.contents,otherCardsContents,MISMATCH_PERNATY];
+                            
                             
                         }
                         
                 
                         
                     
+                    }else{
+                    
+                        self.lastChooseResult=[NSString stringWithFormat:@"choose %@",card.contents];
                     }
                     
             

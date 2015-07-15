@@ -19,7 +19,9 @@
 -(Card *)cardAtIndex:(NSUInteger)index;
 
 
-@property(nonatomic,readonly) NSUInteger score;
+@property(nonatomic,readonly) NSInteger score;
 @property(nonatomic)NSUInteger maxMatchingCard;
+
+@property(nonatomic,strong)NSString *lastChooseResult;
 
 @end

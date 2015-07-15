@@ -14,7 +14,7 @@
 
     int score=0;
     
-    if ([otherCards count]==1) {
+    if ([otherCards count]) {
         
         id card=[otherCards firstObject];
         if ([card isKindOfClass:[PlayingCard class]]) {
