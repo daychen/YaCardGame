@@ -49,7 +49,7 @@
 @synthesize suit=_suit;
 
 +(NSArray *) validSuits{
-    return @[@"♠︎",@"♣︎",@"♥︎",@"♦︎"];
+    return @[@"♠",@"♣",@"♥",@"Q♦"];
 
 }
 
