@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 Chen, Ya. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "PlayingCardViewController.h"
 #import "PlayingCardDeck.h"
 #import "Card.h"
 #import "CardMatchingGame.h"
-@interface ViewController ()
+@interface PlayingCardViewController ()
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *CardButtons;
 
 
@@ -26,7 +26,7 @@
 @end
 
 
-@implementation ViewController
+@implementation PlayingCardViewController
 
 
 - (IBAction)chooseModeSegment:(UISegmentedControl *)sender {

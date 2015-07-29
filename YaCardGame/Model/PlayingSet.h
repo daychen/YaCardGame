@@ -9,14 +9,14 @@
 #import "Card.h"
 
 
-@interface SetCard : Card
+@interface PlayingSet : Card
 
 
 
 @property (nonatomic) NSInteger symbolNumber;
 @property(nonatomic, strong)NSString* symbolColor;
 @property(nonatomic,strong)NSString* symbolShading;
-@property(nonatomic)NSInteger symbolType;
+@property(nonatomic)NSString* symbolType;
 
 
 
