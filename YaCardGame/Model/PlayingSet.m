@@ -41,7 +41,7 @@
 
 +(NSArray *) availableColorSet{
     
-    return @[@"red",@"blue",@"yellow"];
+    return @[@"redColor",@"blueColor",@"yellowColor"];
 
 }
 

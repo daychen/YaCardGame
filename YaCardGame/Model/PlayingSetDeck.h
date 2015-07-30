@@ -7,9 +7,11 @@
 //
 
 #import "Deck.h"
+#import "PlayingSet.h"
 
 @interface PlayingSetDeck : Deck
 
 -(instancetype)initWithCount:(NSInteger)count;
+-(PlayingSet *)drawOneSetCard;
 
 @end

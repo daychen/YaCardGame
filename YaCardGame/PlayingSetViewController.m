@@ -17,7 +17,9 @@
 
 @property(nonatomic, strong)PlayingSetDeck *deck;
 
-@property (weak, nonatomic) IBOutlet PlayingSetView *oneSingelSetCardView;
+
+
+@property (strong, nonatomic) IBOutletCollection(PlayingSetView) NSArray *playingSetCards;
 
 @end
 
@@ -40,10 +42,33 @@ static const int PLAYINGSETGAME_CARDCOUNT =12;
     return _deck;
 }
 
+-(NSArray *)playingSetCards{
+    if (!_playingSetCards) {
+        _playingSetCards=[[NSArray alloc]init];
+    }
+    
+    return _playingSetCards;
+}
 
--(void)loadView{
+-(void)addCardContents{
+    
+    for (PlayingSetView *playingSetCard in self.playingSetCards ) {
+        
+        
+        PlayingSet *oneCard=[[PlayingSet alloc]init];
+ 
+        
+        
+        playingSetCard.symbolColor=oneCard.symbolColor;
+        playingSetCard.symbolCount=oneCard.symbolNumber;
+        playingSetCard.symbolShading=oneCard.symbolShading;
+        playingSetCard.symbolShape=oneCard.symbolType;
+    }
+    
+    
+        
+    
 
-   
 }
 
 
@@ -51,17 +76,18 @@ static const int PLAYINGSETGAME_CARDCOUNT =12;
 
 -(void)viewDidLoad{
     
-   // [self drawSetSingleCardView];
+     [super viewDidLoad];
+   [self addCardContents];
     
 
     
-    //PlayingSet *singleSetCard=[self.deck drawRandomCard];
     
     
-       self.oneSingelSetCardView .symbolColor=@"red";
-        self.oneSingelSetCardView.symbolCount=3;
-        self.oneSingelSetCardView.symbolShading=@"empty";
-       self.oneSingelSetCardView.symbolShape=@"circle";
+    
+//       self.oneSingelSetCardView.symbolColor=@"red";
+//        self.oneSingelSetCardView.symbolCount=3;
+//        self.oneSingelSetCardView.symbolShading=@"empty";
+//       self.oneSingelSetCardView.symbolShape=@"circle";
 }
 
 @end

@@ -63,8 +63,51 @@
     [textContent drawInRect:textBounds];
     
     
+    [self drawRoundRectSymbol:self.symbolCount];
+    
+    
 }
 
+
+
+-(void)drawRoundRectSymbol: (int)count{
+    
+    if ([self.symbolShape isEqualToString:@"square"]) {
+        
+        
+        
+       
+        CGRect roundRectSymbol=CGRectMake(10, 50, 35, 20);
+        CGFloat radius=10;
+        UIBezierPath *roundRectPath=[UIBezierPath bezierPathWithRoundedRect:roundRectSymbol cornerRadius:radius];
+        [roundRectPath addClip];
+        [[self colorFromString:self.symbolColor ] setFill];
+        
+        UIRectFill(roundRectSymbol);
+        
+    }
+    
+    if ([self.symbolShape isEqualToString:@"diamond"]) {
+        
+        
+    }
+    
+    if ([self.symbolShape isEqualToString:@"cicle"]) {
+        
+    }
+    
+
+}
+
+-(UIColor *)colorFromString:(NSString *)colorname{
+
+    SEL shapeColor=NSSelectorFromString(colorname);
+    
+    UIColor *color=[UIColor performSelector:shapeColor];
+    
+    return  color;
+
+}
 
 
 -(void) setup{

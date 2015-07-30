@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nbO-mE-Dui">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nbO-mE-Dui">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
         <scene sceneID="Qep-32-r6U">
             <objects>
-                <tabBarController id="IIU-VY-mHd" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabStoryboard" id="IIU-VY-mHd" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="ebp-0W-kkP">
@@ -27,19 +27,125 @@
         <!--Set-->
         <scene sceneID="9yH-2W-Eka">
             <objects>
-                <viewController id="nbO-mE-Dui" customClass="PlayingSetViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="gameSetStoryboard" id="nbO-mE-Dui" customClass="PlayingSetViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zAb-kP-p3H"/>
                         <viewControllerLayoutGuide type="bottom" id="jBr-PD-Bdb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RDc-p6-xFj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgD-sg-R1Q" customClass="PlayingSetView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="123" y="204" width="82" height="108"/>
+                                    <rect key="frame" x="24" y="57" width="57" height="75"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yML-e2-oPl" customClass="PlayingSetView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="153" width="57" height="75"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSP-OU-Nrq" customClass="PlayingSetView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="104" y="57" width="57" height="75"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ttQ-cG-9T8" customClass="PlayingSetView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="188" y="57" width="57" height="75"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHg-f0-8t4" customClass="PlayingSetView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="275" y="57" width="57" height="75"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKr-sa-wci" customClass="PlayingSetView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="104" y="153" width="57" height="75"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="219-u4-Jec" customClass="PlayingSetView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="188" y="153" width="57" height="75"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lqx-Rq-ZoQ" customClass="PlayingSetView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="275" y="153" width="57" height="75"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5mv-zz-nts" customClass="PlayingSetView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="247" width="57" height="75"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qum-c0-l7n" customClass="PlayingSetView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="104" y="247" width="57" height="75"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q64-Be-Gvw" customClass="PlayingSetView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="188" y="247" width="57" height="75"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="def-cK-HS4" customClass="PlayingSetView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="275" y="247" width="57" height="75"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pxb-Kx-XSW" customClass="PlayingSetView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="104" y="349" width="57" height="75"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TCD-2K-6oZ" customClass="PlayingSetView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="349" width="57" height="75"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZm-Fy-v2K" customClass="PlayingSetView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="188" y="349" width="57" height="75"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dGJ-19-YVQ" customClass="PlayingSetView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="275" y="349" width="57" height="75"/>
                                 </variation>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="this is a set game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmo-93-86t">
@@ -48,7 +154,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="120" y="462" width="135" height="21"/>
+                                    <rect key="frame" x="120" y="479" width="135" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -56,12 +162,42 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="mgD-sg-R1Q"/>
+                                <exclude reference="yML-e2-oPl"/>
+                                <exclude reference="lSP-OU-Nrq"/>
+                                <exclude reference="ttQ-cG-9T8"/>
+                                <exclude reference="JHg-f0-8t4"/>
+                                <exclude reference="bKr-sa-wci"/>
+                                <exclude reference="219-u4-Jec"/>
+                                <exclude reference="Lqx-Rq-ZoQ"/>
+                                <exclude reference="5mv-zz-nts"/>
+                                <exclude reference="Qum-c0-l7n"/>
+                                <exclude reference="q64-Be-Gvw"/>
+                                <exclude reference="def-cK-HS4"/>
+                                <exclude reference="pxb-Kx-XSW"/>
+                                <exclude reference="TCD-2K-6oZ"/>
+                                <exclude reference="cZm-Fy-v2K"/>
+                                <exclude reference="dGJ-19-YVQ"/>
                                 <exclude reference="kmo-93-86t"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="subviews">
                                 <include reference="mgD-sg-R1Q"/>
+                                <include reference="yML-e2-oPl"/>
+                                <include reference="lSP-OU-Nrq"/>
+                                <include reference="ttQ-cG-9T8"/>
+                                <include reference="JHg-f0-8t4"/>
+                                <include reference="bKr-sa-wci"/>
+                                <include reference="219-u4-Jec"/>
+                                <include reference="Lqx-Rq-ZoQ"/>
+                                <include reference="5mv-zz-nts"/>
+                                <include reference="Qum-c0-l7n"/>
+                                <include reference="q64-Be-Gvw"/>
+                                <include reference="def-cK-HS4"/>
+                                <include reference="pxb-Kx-XSW"/>
+                                <include reference="TCD-2K-6oZ"/>
+                                <include reference="cZm-Fy-v2K"/>
+                                <include reference="dGJ-19-YVQ"/>
                                 <include reference="kmo-93-86t"/>
                             </mask>
                         </variation>
@@ -69,23 +205,38 @@
                     <tabBarItem key="tabBarItem" title="Set" id="QGt-q5-GJR"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="oneSingelSetCardView" destination="mgD-sg-R1Q" id="aIX-hM-wHa"/>
+                        <outletCollection property="playingSetCards" destination="mgD-sg-R1Q" id="Zql-Ai-qWm"/>
+                        <outletCollection property="playingSetCards" destination="lSP-OU-Nrq" id="g2q-9W-1tK"/>
+                        <outletCollection property="playingSetCards" destination="ttQ-cG-9T8" id="mcE-JS-tIC"/>
+                        <outletCollection property="playingSetCards" destination="JHg-f0-8t4" id="Vg9-wC-VJJ"/>
+                        <outletCollection property="playingSetCards" destination="Lqx-Rq-ZoQ" id="aaF-Tc-YOJ"/>
+                        <outletCollection property="playingSetCards" destination="219-u4-Jec" id="0Xl-FG-Zoj"/>
+                        <outletCollection property="playingSetCards" destination="bKr-sa-wci" id="PQl-qi-BTU"/>
+                        <outletCollection property="playingSetCards" destination="yML-e2-oPl" id="jyq-R8-bhk"/>
+                        <outletCollection property="playingSetCards" destination="def-cK-HS4" id="kRz-6S-2xk"/>
+                        <outletCollection property="playingSetCards" destination="q64-Be-Gvw" id="Crp-Nh-hao"/>
+                        <outletCollection property="playingSetCards" destination="Qum-c0-l7n" id="7L9-eP-5kw"/>
+                        <outletCollection property="playingSetCards" destination="5mv-zz-nts" id="WwF-Zt-81c"/>
+                        <outletCollection property="playingSetCards" destination="dGJ-19-YVQ" id="JaG-I8-Ms6"/>
+                        <outletCollection property="playingSetCards" destination="cZm-Fy-v2K" id="p3l-GB-mHm"/>
+                        <outletCollection property="playingSetCards" destination="pxb-Kx-XSW" id="qNt-RI-x54"/>
+                        <outletCollection property="playingSetCards" destination="TCD-2K-6oZ" id="46Y-ZL-HmZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N4A-49-Nnw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="761.5" y="-342.375"/>
+            <point key="canvasLocation" x="587.5" y="-346.125"/>
         </scene>
         <!--Card-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="PlayingCardViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="cardStoryboard" id="vXZ-lx-hvc" customClass="PlayingCardViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbM-RK-LMu">
@@ -643,7 +794,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="349.5" y="115.125"/>
+            <point key="canvasLocation" x="327.5" y="302.5"/>
         </scene>
     </scenes>
     <resources>

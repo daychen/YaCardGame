@@ -31,4 +31,12 @@
     
     return self;
 }
+
+-(PlayingSet *)drawOneSetCard{
+    PlayingSet *singleCard=nil;
+
+    return singleCard;
+}
+
+
 @end
