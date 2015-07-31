@@ -50,7 +50,7 @@
     
     
     
-    NSAttributedString *textContent=[[NSAttributedString alloc]initWithString:[NSString stringWithFormat:@"%ld\n%@\n%@\n%@",self.symbolCount,self.symbolColor,self.symbolShading,self.symbolShape] attributes:@{NSFontAttributeName:cornerFont,NSParagraphStyleAttributeName:cornerStyle}];
+    NSAttributedString *textContent=[[NSAttributedString alloc]initWithString:[NSString stringWithFormat:@"%ld%@%@%@",self.symbolCount,self.symbolColor,self.symbolShading,self.symbolShape] attributes:@{NSFontAttributeName:cornerFont,NSParagraphStyleAttributeName:cornerStyle}];
     
     
     CGRect textBounds;
@@ -64,7 +64,7 @@
     
     
     [self drawRoundRectSymbol:self.symbolCount];
-    
+        
     
 }
 
@@ -77,7 +77,7 @@
         
         
        
-        CGRect roundRectSymbol=CGRectMake(10, 50, 35, 20);
+        CGRect roundRectSymbol=CGRectMake(10, 15, 15, 40);
         CGFloat radius=10;
         UIBezierPath *roundRectPath=[UIBezierPath bezierPathWithRoundedRect:roundRectSymbol cornerRadius:radius];
         [roundRectPath addClip];
@@ -85,14 +85,51 @@
         
         UIRectFill(roundRectSymbol);
         
+        
     }
     
     if ([self.symbolShape isEqualToString:@"diamond"]) {
         
         
+        
+        UIBezierPath *diamondpath=[UIBezierPath bezierPath];
+        [diamondpath moveToPoint:CGPointMake(20,10)];
+        [diamondpath addLineToPoint:CGPointMake(30, 35)];
+        [diamondpath addLineToPoint:CGPointMake(20, 60)];
+
+        [diamondpath addLineToPoint:CGPointMake(10, 35)];
+        [diamondpath closePath];
+        
+        [[self colorFromString:self.symbolColor] setFill];
+
+        [diamondpath fill];
+        
+        
     }
     
-    if ([self.symbolShape isEqualToString:@"cicle"]) {
+    if ([self.symbolShape isEqualToString:@"circle"]) {
+        
+        
+        
+        UIBezierPath *curvePath=[UIBezierPath bezierPath];
+        [curvePath moveToPoint:CGPointMake(30,20)];
+        [curvePath addCurveToPoint:CGPointMake(40,60 ) controlPoint1:CGPointMake(50, 30) controlPoint2:CGPointMake(10, 50)];
+     
+       // curvePath.lineWidth=2;
+        
+        
+        
+        [[self colorFromString:self.symbolColor] setStroke];
+        
+         [curvePath stroke];
+
+       UIBezierPath *curvePath2=[UIBezierPath bezierPath];
+        [curvePath2 moveToPoint:CGPointMake(40,20)];
+       [curvePath2 addCurveToPoint:CGPointMake(40,50 ) controlPoint1:CGPointMake(55, 32) controlPoint2:CGPointMake(38, 40)];
+//        
+        
+        
+        [curvePath2 stroke];
         
     }
     

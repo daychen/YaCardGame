@@ -40,112 +40,77 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="24" y="57" width="57" height="75"/>
+                                    <rect key="frame" x="24" y="57" width="97" height="65"/>
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yML-e2-oPl" customClass="PlayingSetView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="24" y="153" width="57" height="75"/>
+                                    <rect key="frame" x="24" y="153" width="97" height="65"/>
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSP-OU-Nrq" customClass="PlayingSetView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="104" y="57" width="57" height="75"/>
+                                    <rect key="frame" x="144" y="57" width="97" height="65"/>
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ttQ-cG-9T8" customClass="PlayingSetView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="188" y="57" width="57" height="75"/>
-                                </variation>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHg-f0-8t4" customClass="PlayingSetView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="275" y="57" width="57" height="75"/>
+                                    <rect key="frame" x="257" y="57" width="97" height="65"/>
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKr-sa-wci" customClass="PlayingSetView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="104" y="153" width="57" height="75"/>
+                                    <rect key="frame" x="144" y="153" width="97" height="65"/>
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="219-u4-Jec" customClass="PlayingSetView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="188" y="153" width="57" height="75"/>
-                                </variation>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lqx-Rq-ZoQ" customClass="PlayingSetView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="275" y="153" width="57" height="75"/>
+                                    <rect key="frame" x="257" y="153" width="97" height="65"/>
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5mv-zz-nts" customClass="PlayingSetView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="24" y="247" width="57" height="75"/>
+                                    <rect key="frame" x="24" y="247" width="97" height="65"/>
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qum-c0-l7n" customClass="PlayingSetView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="104" y="247" width="57" height="75"/>
+                                    <rect key="frame" x="144" y="247" width="97" height="65"/>
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q64-Be-Gvw" customClass="PlayingSetView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="188" y="247" width="57" height="75"/>
-                                </variation>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="def-cK-HS4" customClass="PlayingSetView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="275" y="247" width="57" height="75"/>
-                                </variation>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pxb-Kx-XSW" customClass="PlayingSetView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="104" y="349" width="57" height="75"/>
+                                    <rect key="frame" x="257" y="247" width="97" height="65"/>
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TCD-2K-6oZ" customClass="PlayingSetView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="24" y="349" width="57" height="75"/>
+                                    <rect key="frame" x="24" y="349" width="97" height="65"/>
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZm-Fy-v2K" customClass="PlayingSetView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="188" y="349" width="57" height="75"/>
-                                </variation>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dGJ-19-YVQ" customClass="PlayingSetView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="275" y="349" width="57" height="75"/>
+                                    <rect key="frame" x="257" y="349" width="97" height="65"/>
                                 </variation>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="this is a set game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmo-93-86t">
@@ -157,6 +122,13 @@
                                     <rect key="frame" x="120" y="479" width="135" height="21"/>
                                 </variation>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pxb-Kx-XSW" customClass="PlayingSetView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="144" y="349" width="97" height="65"/>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
@@ -165,19 +137,15 @@
                                 <exclude reference="yML-e2-oPl"/>
                                 <exclude reference="lSP-OU-Nrq"/>
                                 <exclude reference="ttQ-cG-9T8"/>
-                                <exclude reference="JHg-f0-8t4"/>
                                 <exclude reference="bKr-sa-wci"/>
                                 <exclude reference="219-u4-Jec"/>
-                                <exclude reference="Lqx-Rq-ZoQ"/>
                                 <exclude reference="5mv-zz-nts"/>
                                 <exclude reference="Qum-c0-l7n"/>
                                 <exclude reference="q64-Be-Gvw"/>
-                                <exclude reference="def-cK-HS4"/>
-                                <exclude reference="pxb-Kx-XSW"/>
                                 <exclude reference="TCD-2K-6oZ"/>
                                 <exclude reference="cZm-Fy-v2K"/>
-                                <exclude reference="dGJ-19-YVQ"/>
                                 <exclude reference="kmo-93-86t"/>
+                                <exclude reference="pxb-Kx-XSW"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -186,19 +154,15 @@
                                 <include reference="yML-e2-oPl"/>
                                 <include reference="lSP-OU-Nrq"/>
                                 <include reference="ttQ-cG-9T8"/>
-                                <include reference="JHg-f0-8t4"/>
                                 <include reference="bKr-sa-wci"/>
                                 <include reference="219-u4-Jec"/>
-                                <include reference="Lqx-Rq-ZoQ"/>
                                 <include reference="5mv-zz-nts"/>
                                 <include reference="Qum-c0-l7n"/>
                                 <include reference="q64-Be-Gvw"/>
-                                <include reference="def-cK-HS4"/>
-                                <include reference="pxb-Kx-XSW"/>
                                 <include reference="TCD-2K-6oZ"/>
                                 <include reference="cZm-Fy-v2K"/>
-                                <include reference="dGJ-19-YVQ"/>
                                 <include reference="kmo-93-86t"/>
+                                <include reference="pxb-Kx-XSW"/>
                             </mask>
                         </variation>
                     </view>
@@ -208,16 +172,12 @@
                         <outletCollection property="playingSetCards" destination="mgD-sg-R1Q" id="Zql-Ai-qWm"/>
                         <outletCollection property="playingSetCards" destination="lSP-OU-Nrq" id="g2q-9W-1tK"/>
                         <outletCollection property="playingSetCards" destination="ttQ-cG-9T8" id="mcE-JS-tIC"/>
-                        <outletCollection property="playingSetCards" destination="JHg-f0-8t4" id="Vg9-wC-VJJ"/>
-                        <outletCollection property="playingSetCards" destination="Lqx-Rq-ZoQ" id="aaF-Tc-YOJ"/>
                         <outletCollection property="playingSetCards" destination="219-u4-Jec" id="0Xl-FG-Zoj"/>
                         <outletCollection property="playingSetCards" destination="bKr-sa-wci" id="PQl-qi-BTU"/>
                         <outletCollection property="playingSetCards" destination="yML-e2-oPl" id="jyq-R8-bhk"/>
-                        <outletCollection property="playingSetCards" destination="def-cK-HS4" id="kRz-6S-2xk"/>
                         <outletCollection property="playingSetCards" destination="q64-Be-Gvw" id="Crp-Nh-hao"/>
                         <outletCollection property="playingSetCards" destination="Qum-c0-l7n" id="7L9-eP-5kw"/>
                         <outletCollection property="playingSetCards" destination="5mv-zz-nts" id="WwF-Zt-81c"/>
-                        <outletCollection property="playingSetCards" destination="dGJ-19-YVQ" id="JaG-I8-Ms6"/>
                         <outletCollection property="playingSetCards" destination="cZm-Fy-v2K" id="p3l-GB-mHm"/>
                         <outletCollection property="playingSetCards" destination="pxb-Kx-XSW" id="qNt-RI-x54"/>
                         <outletCollection property="playingSetCards" destination="TCD-2K-6oZ" id="46Y-ZL-HmZ"/>
